@@ -1,1 +1,1 @@
-export { sum } from './sum';
+export { Stack } from './stack';
