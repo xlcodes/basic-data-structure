@@ -1,0 +1,8 @@
+dist
+.eslintrc.js
+commitlint.config.js
+webpack.*
+postcss.*
+**/*.test.js
+lib
+rollup.config.js
