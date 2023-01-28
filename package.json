@@ -13,7 +13,7 @@
   "author": "xlcodes <xiaolin201809@126.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
+    "build": "export NODE_ENV=development && rollup -c",
     "test": "jest",
     "coveralls": "jest --coverage",
     "lint": "eslint --ext .tsx,.ts,.js src/",

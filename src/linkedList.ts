@@ -2,8 +2,11 @@
  * 节点对象
  */
 class NodeItem {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   next: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(data: any) {
     this.data = data;
     this.next = null;
@@ -14,6 +17,7 @@ class NodeItem {
  * 链表
  */
 class LinkedList {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   head: any;
   length: number;
   constructor() {
@@ -34,12 +38,14 @@ class LinkedList {
    * 向链表尾部添加一个新的项。
    * @param data
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   append(data: any) {
     const newNode = new NodeItem(data);
     // 链表为空
     if (this.length === 0) {
       this.head = newNode;
     } else {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       let current: any = this.head;
       // 指针后移
       while (current.next) {
@@ -57,6 +63,7 @@ class LinkedList {
    * @param data 插入元素
    * @returns 成功返回 true 否则返回 false
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   insert(position: number, data: any) {
     if (this.overflow(position)) return false;
     const newNode = new NodeItem(data);
@@ -83,6 +90,7 @@ class LinkedList {
    * @param data 查找的元素
    * @returns 当前元素所在位置。如果链表中没有该元素就返回-1。
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   indexOf(data: any) {
     let current = this.head;
     let index = 0;
@@ -118,6 +126,7 @@ class LinkedList {
    * @param newData 新的元素值
    * @returns 更新成功返回 true，否则返回 false
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   update(position: number, newData: any) {
     if (this.overflow(position)) return false;
     let current = this.head;
@@ -157,6 +166,7 @@ class LinkedList {
    * @param data 指定元素
    * @returns 当前删除的元素
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   remove(data: any) {
     const position = this.indexOf(data);
     return this.removeAt(position);
