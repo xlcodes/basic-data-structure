@@ -28,5 +28,7 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/indent': ['error', 2], // tab 缩进2空格
     'prettier/prettier': 'error',
+    // 不允许使用【any】
+    '@typescript-eslint/no-explicit-any': 'warn',
   },
 };
