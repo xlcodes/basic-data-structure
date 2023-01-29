@@ -1,10 +1,8 @@
 class NodeItem {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data: any;
   prev: NodeItem | null;
   next: NodeItem | null;
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(data: any) {
     this.data = data;
     this.next = null;
@@ -13,9 +11,7 @@ class NodeItem {
 }
 
 class DoublyLinkedList {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   head: any;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   tail: any;
   length: number;
 
@@ -38,7 +34,6 @@ class DoublyLinkedList {
    * 向链表尾部追加一个新元素
    * @param data 添加元素的值
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   append(data: any) {
     const newNode = new NodeItem(data);
     if (this.size() === 0) {
@@ -58,7 +53,6 @@ class DoublyLinkedList {
    * @param data 插入数据
    * @returns 是否插入成功
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   insert(position: number, data: any) {
     if (this.overflow(position)) return false;
     const newNode = new NodeItem(data);
@@ -136,7 +130,6 @@ class DoublyLinkedList {
    * @param data 查找的元素
    * @returns position or -1
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   indexOf(data: any) {
     let current = this.head;
     let index = 0;
@@ -156,7 +149,6 @@ class DoublyLinkedList {
    * @param data 新的值
    * @returns 是否修改成功
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   update(position: number, data: any) {
     if (this.overflow(position)) return false;
     let index, current;
@@ -219,7 +211,6 @@ class DoublyLinkedList {
    * @param data 被删除元素的值
    * @returns 被删除的元素值 or null
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   remove(data: any) {
     const position = this.indexOf(data);
     return this.removeAt(position);
