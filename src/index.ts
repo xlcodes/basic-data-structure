@@ -10,3 +10,5 @@ export { LinkedList } from './linkedList';
 export { DoublyLinkedList } from './doublyLinkedList';
 // 集合
 export { SetByObject } from './setByObject';
+// 字典
+export { Dictionary } from './dictionary';
