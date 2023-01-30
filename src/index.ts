@@ -12,3 +12,5 @@ export { DoublyLinkedList } from './doublyLinkedList';
 export { SetByObject } from './setByObject';
 // 字典
 export { Dictionary } from './dictionary';
+// 哈希表
+export { HashTable } from './hashTable';

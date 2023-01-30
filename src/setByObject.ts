@@ -42,7 +42,7 @@ class SetByObject {
    */
   union(otherSet: SetByObject) {
     const unionSet = new SetByObject();
-    const values = [...this.values(), ...otherSet.values()];
+    const values = this.values().concat(otherSet.values());
 
     for (let i = 0; i < values.length; i++) {
       unionSet.add(values[i]);
