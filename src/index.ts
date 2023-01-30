@@ -8,3 +8,5 @@ export { PriorityQueue } from './priorityQueue';
 export { LinkedList } from './linkedList';
 // 双向链表
 export { DoublyLinkedList } from './doublyLinkedList';
+// 集合
+export { SetByObject } from './setByObject';
